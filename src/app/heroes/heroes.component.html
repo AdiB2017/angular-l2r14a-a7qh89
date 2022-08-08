@@ -1,0 +1,30 @@
+<h2>Sensors</h2>
+
+<div>
+  <!--
+  <label for="new-hero">sensor id: </label>
+  <input id="new-hero" #heroName />
+
+ 
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>
+-->
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
